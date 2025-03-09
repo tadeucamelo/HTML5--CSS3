@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+    /*
+        Em HTML ao usar id -> # (único elemento)
+        Em  HTML ao usar class -> . (Múltiplos elementos)
+    */
+
+
+
+
+body{
+    background-color: rgba(91, 233, 243, 0.404);
+
+
+}
+
+h1#principal{
+    color: white;
+    background-color: rgba(32, 105, 105, 0.651);
+    text-align: center;
+}
+
+h1{
+    color:  rgba(32, 105, 105, 0.651);
+}
+
+h2{
+    color:white;
+}
+
+.basico{
+    color: rgb(228, 255, 72);
+}
+
+.intermediario{
+    color: rgb(44, 233, 44);
+}
+
+.avancado{
+    color: red;
+}
+
+.destaque{
+    background-color: rgb(192, 165, 204);
+}

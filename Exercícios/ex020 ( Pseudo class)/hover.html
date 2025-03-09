@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aplicando hover</title>
+    <style>
+
+        
+
+        div#d1:hover{
+            color:red;
+        }
+
+        div#d2 > p{
+            display: none;
+        }
+
+        div#d2:hover > p{
+            display:block;
+            color: white;
+            background-color: red;
+        }
+
+        
+
+    
+    
+    </style>
+</head>
+<body>
+    <h1>Usando hover em div</h1>
+    <div id = "d1">
+        Fazendo o texto mudar de cor!
+    
+    </div>
+
+    <div id = "d2">
+        Passe o mouse para mostrar o texto escondido!
+        <p>TEXTO ESCONDIDO!!!</p>
+    </div>
+    
+</body>
+</html>

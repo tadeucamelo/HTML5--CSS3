@@ -1,0 +1,40 @@
+@charset "pt-br";
+
+
+body{
+    background-color: aquamarine;
+}
+
+
+
+header{
+    background-image: linear-gradient(to bottom,#3cd781,#37c677,#2da262,#1a5c38);
+    height: 150px;
+    
+
+}
+
+h1#primeiro{
+    font-size:20px;
+    text-align: center;
+    color: white;
+    padding: 25px;
+    font-weight: bold;
+}
+
+p#sub{
+    font-size: 12px;
+    text-align: center;
+    color:white;
+
+
+}
+
+main{
+    width:800px;
+    margin:auto;
+    background-color: white;
+    padding: 20px;
+    
+}
+
