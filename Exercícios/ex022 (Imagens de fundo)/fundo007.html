@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização de imagem</title>
+</head>
+    <style>
+        #conteiner{
+            position: relative; /* A posição por padrão já é relativa*/
+            background-color:purple;
+            height: 500px;
+            padding: 10px;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+        } 
+        #conteúdo{
+            position: absolute; /* Para conseguir alterar a posição da iamgem dentro de outra */
+            background-color: yellow;
+            height: 200px;
+            width: 200px;
+            background-image: url('imagens/target001.png'); 
+            background-size: 100% 100%;
+
+
+            left: 50%; /* Fica habilitado com a position é "absolute" */
+            top: 50%;  /* Fica habilitado com a position é "absolute" */
+
+            transform: translate(-50%,-50%); /* Para alterar a posição e também centralizar a imagem */ 
+        }       
+    </style>
+<body>
+    <section id = "conteiner">
+        <article id = "conteúdo">
+
+        </article>
+    </section>
+</body>
+</html>
