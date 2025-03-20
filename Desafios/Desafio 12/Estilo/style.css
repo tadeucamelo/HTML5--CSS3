@@ -5,7 +5,15 @@
 
 @font-face {
     font-family: 'poesia';
-    src: url('Fontes/');
+    src: url('../Fontes/Sriracha/Sriracha-Regular.ttf') format('truetype');
+    font-weight: normal;
+
+}
+
+@font-face {
+    font-family: 'passion one';
+    src: url('../Fontes/Passion_One/PassionOne-Bold.ttf') format('truetype');
+    font-weight: normal;
 }
 
 
@@ -17,6 +25,8 @@
 }
 
 :root{
+    --font-titulo: 'passion one';
+    --font-poesia: 'poesia';
 
 }
 
@@ -34,7 +44,7 @@ header > h1{
     padding-top: 80px;
     font-size: 7vw;  /* Texto do título terá 7% da largura da tela */
     font-weight: bolder;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: var(--font-titulo);
     font-style: normal;
 }
 
@@ -54,10 +64,13 @@ header a:hover{
     text-decoration: underline;
 }
 
+main p {
+    padding: 8px;
+}
 
 section#conteiner1{
     background-image: url('imagens/background001.jpg');
-    height: 1000px;
+    height: 140vw;
     background-size: 100% 100%;
     background-position: right center;
     background-attachment: fixed;
@@ -66,27 +79,78 @@ section#conteiner1{
 
 article#conteúdo1{
     background-color: white;
-    height: 400px;   
+    height: 50vw;   
     color: black;
     font-size: 3vw;
     padding: 50px 20px;
+    font-family: var(--font-poesia)
 
 }
-article#conteúdo1 > p{
-    padding: 15px;
-}
+
 
 article#conteúdo2{
     background-color: rgba(0, 0, 0, 0.326);
-    height: 400px;
-    width: 300px;
+    height: 60vw;
+    width: 40vw;
     margin: 50px 20px;
     color: white;
+    font-size: 3vw;
+    font-family: var(--font-poesia);
+    
+}
+
+
+section#conteiner2{
+    background-image: url('imagens/background002.jpg');
+    background-size: 100% 100%;
+    height: 200vw;
+    background-attachment: fixed;
+}
+
+article#conteúdo3{
+    background-color: white;
+    padding: 50px 20px;
+    font-size: 3vw;
+    font-family: var(--font-poesia);   
+
+}
+
+
+article#conteúdo4{
+    background-color: rgba(0, 0, 0, 0.316);
+    color: white;
+    margin: 50px 20px;
+    height: 55vw;
+    width: 40vw;
+    font-family: var(--font-poesia);
     font-size: 3vw;
     
 }
 
-article#conteúdo2 > p{
-    padding: 15px;
+article#conteúdo5{
+    padding: 50px 20px;
+    font-family: var(--font-poesia);
+    font-size: 3vw;
+
+    
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+footer  a:hover{
+    text-decoration:  underline;
 
 }
+
+
