@@ -18,7 +18,7 @@
     --cor5: #063d1e;
 
     --fonte-padrao: Arial, Verdana, Helvetica, Sans-serif;
-    --fonte-destaque: 'Beba Neue';
+    --fonte-destaque: "Bebas Neue", sans-serif;
     --fonte-android: 'Android';
 }
 
@@ -47,6 +47,7 @@ header > h1{
     color: white;
     font-family: var(--fonte-destaque);
     margin-bottom: 20px;
+    font-size: 50px;
     
 }
 
@@ -63,7 +64,8 @@ nav{
 
 nav > a{
     color: white;
-    padding: 13px;
+    padding: 15px;
+    margin: 15px;
     text-decoration: none;
     font-weight: bold;
     
