@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        table{
+            margin: 10px;
+            border-collapse: collapse; /* Zera  espaço entre os dados */
+        }
+
+        tr#linha2{
+            background-color: gray;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            vertical-align: middle;          
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Minha primeiro tabela</h1>
+
+    <!--
+        HIERARQUIA DAS TABELAS
+        TABLE = Tabela
+            TABLE ROM = Linha de tabela
+                TABLE HEADER = Linha de cabeçalho
+                TABLE DATA = Linha de dado
+    -->
+
+    <table>
+        <tr id="linha1">
+            <td>a1</td>
+            <td>a2</td>
+            <td>a3</td>
+        </tr>
+
+        <tr id="linha2">
+            <td>b1</td>
+            <td>b2</td>
+            <td>b3</td>
+        </tr>
+
+        <tr id="linha3">
+            <td>c1</td>
+            <td>c2</td>
+            <td>c3</td>
+        </tr>
+    </table>
+
+</body>
+
+
+</html>

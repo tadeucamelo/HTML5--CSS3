@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+
+        th{
+            background-color: gray;
+        }
+
+        td,th{
+            border: 1px solid black;
+            width: 200px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com tabelas maiores</h1>
+
+    <!--
+    
+    HiERARQUIA DA TABELA
+
+    TABLE
+        THEAD
+            TH,TR,TD
+        TBODY
+            TH,TR,TD
+        TFOOT
+            TH,TR,TD
+    -->
+
+    <table>
+        <thead>
+            <th>Unidade Federativa</th>
+            <th>População</th>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.973.194</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.322.691</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.219.679</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
