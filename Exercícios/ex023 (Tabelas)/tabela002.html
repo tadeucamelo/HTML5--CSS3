@@ -7,17 +7,56 @@
     <style>
         table{
             border-collapse: collapse;
+            position: relative;
         }
+
+        caption{
+            font-size: 18px;
+            background-color: rgba(128, 128, 128, 0.334);
+            padding: 10px;
+        }
+        
+    
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color:  gray;
+
+        }
+
 
         th{
             background-color: gray;
+            text-align: center;
         }
 
         td,th{
             border: 1px solid black;
             width: 200px;
             height: 30px;
+            padding: 5px;
+            
         }
+
+
+        .number{
+            text-align: right;
+        }
+        tbody > tr:nth-child(odd){  /* Altera somente as linhas ímpares */
+            background-color: lightgray;
+        }
+
+
+        tbody > tr:nth-child(even){  /* Altera somente as linhas pares */
+            background-color: white;
+        }
+
+        tfoot{
+            background-color: gray;
+        }
+
+       
+        
     </style>
 </head>
 <body>
@@ -37,25 +76,128 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
-            <th>Unidade Federativa</th>
-            <th>População</th>
+            <th scope="col">Unidade Federativa</th>
+            <th scope="col">População</th>
 
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>45.973.194</td>
+                <td class="number">45.973.194</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>21.322.691</td>
+                <td class="number">21.322.691</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>17.219.679</td>
+                <td class="number">17.219.679</td>
             </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="number">14.850.513</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="number">11.824.665</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="number">11.229.915</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="number">9.539.029</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="number">9.233.656</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="number">8.664.306</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="number">8.058.441</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="number">7.350.483</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="number">7.010.960</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="number">4.281.209</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="number">4.145.040</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="number">4.102.129</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="number">3.836.399</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="number">3.446.071	</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="number">3.375.646</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="number">3.220.040</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="number">2.982.818</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="number">2.901.895</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="number">2.291.077</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="number">1.746.227</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="number">1.577.342</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="number">880.631</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="number">802.837</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="number">716.793</td>
+            </tr>
+            <tfoot>
+                <th scope="row">Total</td>
+                <td scope="row" class="number">212.583.750</td>
+            </tfoot>
         </tbody>
     </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore aut optio illum, adipisci maiores cumque minus suscipit dolor deserunt assumenda nesciunt veritatis repellendus, minima dicta. Doloribus illo, beatae nostrum, natus sint, animi laborum obcaecati totam eum suscipit perferendis saepe? Consectetur tempora optio illum iste aperiam dolorem quidem perspiciatis! Vel, dignissimos! Laudantium cum eum nisi autem totam vitae sapiente expedita et quam laborum officiis dolor maiores voluptatibus saepe officia, illo quis, odit delectus, quia quisquam iste. Nulla laboriosam dicta soluta ipsam tempore minima doloribus magnam corrupti aliquam doloremque aliquid eum exercitationem, eveniet quae modi iusto, eos reiciendis repudiandae ut voluptatem odio! Nobis eius fugit repellat, inventore obcaecati quidem vel molestias minus iste voluptatibus dolores necessitatibus error quod. Architecto aut fugit aliquam, eum quos atque in placeat aliquid quis dicta autem suscipit deleniti aperiam veniam cum eos ipsum, corporis voluptatem voluptas tenetur dignissimos accusamus! Eaque, dolorem accusamus quaerat blanditiis in error distinctio excepturi autem architecto, modi optio? Totam ex a consectetur corporis distinctio quidem exercitationem esse voluptas dignissimos. Debitis dolores maiores aliquid vel, blanditiis voluptatum ab laudantium pariatur eligendi asperiores sunt consequuntur optio a soluta, provident nesciunt vitae veritatis vero sapiente animi facere rerum. Esse inventore quos, accusantium cum voluptatibus voluptate odit quis? Ex expedita laboriosam commodi reprehenderit earum dolorem qui delectus mollitia ullam. Reiciendis laboriosam accusamus in ullam fuga fugit perspiciatis error commodi cupiditate beatae facere blanditiis quia totam, aperiam dicta id? Quia natus, unde eaque placeat necessitatibus aliquam! Nesciunt, quis? Aliquid atque magnam maiores illo at nostrum dolores ex sequi id aperiam! Perspiciatis ratione iure eius autem molestiae voluptatem omnis optio, dolores animi expedita porro, assumenda, sit sint molestias tempore perferendis consectetur. Sint minus nihil dolorem ducimus voluptatem ipsam. Sapiente nostrum perspiciatis error suscipit quis minus non commodi est. Pariatur, aperiam quia quo explicabo quam quidem similique aliquam deserunt ad accusamus sequi voluptates, nostrum libero, quis ea eum animi. Eius ratione at numquam atque rerum, natus perspiciatis explicabo, veniam magnam dignissimos quam minus consectetur alias debitis. Nobis tempore voluptas, est delectus harum nemo corrupti quas accusantium eum optio error, vel officiis incidunt. Sapiente numquam officiis quis. Nemo deserunt natus nam odio ullam laborum aliquid, eaque porro quidem dolorem quia soluta ratione molestias saepe totam, voluptatem eveniet rerum debitis iusto doloribus ipsa placeat accusantium exercitationem. Numquam dolorum labore saepe dignissimos possimus voluptate magni illum reprehenderit distinctio fuga voluptatum, rem a aliquid nihil vero nam! Iste id doloremque minus officiis veniam facilis fugit dolor ad eum ipsum dignissimos laudantium architecto fugiat ipsa rerum, sed nulla eaque quibusdam, mollitia natus. Minus quibusdam magnam cupiditate, et iste provident aliquam laboriosam neque! Distinctio officiis accusamus doloremque, nobis aliquid ut repellendus similique earum rem delectus omnis blanditiis alias placeat inventore porro? Eligendi iste odit vitae cupiditate quaerat, magni, aut earum quis vel quod saepe harum quia culpa eius nulla impedit officiis eum sapiente fugit laboriosam explicabo. Sit cupiditate dignissimos tempora culpa delectus accusantium quos id voluptatibus a fuga, corrupti, ipsum obcaecati deleniti nulla qui provident! Consectetur possimus praesentium odit quae perferendis nemo vel sunt, eligendi a ipsa sit iste. Natus facilis optio, eaque assumenda veritatis quia ipsa vero adipisci quas quidem officiis, amet aliquam! Itaque nihil magni consequuntur est aut delectus porro atque veritatis quisquam! Ratione corrupti esse facilis necessitatibus itaque, quia voluptatum ipsa ducimus suscipit cupiditate totam ad quibusdam illo, quas illum cum id voluptatem. Atque sint et voluptates nisi doloremque unde quaerat assumenda, repellat dolorem pariatur! Quam, perspiciatis. Rerum laborum, dicta architecto repellat dolores quas saepe quae quam quia dolorem accusantium explicabo ea cumque ad nulla? Ab excepturi beatae similique. Incidunt adipisci tempora unde impedit non labore voluptates sit porro doloribus! Aspernatur voluptate iure in, sapiente tempora reprehenderit, harum voluptatem et, velit animi aperiam. Harum et assumenda vitae placeat atque soluta beatae iure porro laboriosam quia repellat quam necessitatibus, praesentium autem numquam nostrum dolores. Nesciunt voluptatibus minima dolorum sint natus deleniti architecto cupiditate, consequuntur, ullam a atque incidunt dolor labore numquam voluptates dolores nam doloremque eligendi recusandae porro libero rerum saepe eum! Optio, accusantium? Illum ea quisquam dignissimos consequatur sapiente sit voluptatibus? Iste deleniti maiores, accusamus repellat magni illum blanditiis, ab necessitatibus quo laborum consectetur rem et. Cupiditate quia rerum culpa nobis sequi quam modi optio possimus itaque, exercitationem dolorem perferendis illum nulla laudantium dicta officia soluta veritatis, eius, saepe sunt! Dolores voluptates architecto, sint eos tempore soluta repellendus vitae, officiis animi, voluptas earum sequi labore distinctio rem voluptatum. Blanditiis suscipit inventore dicta ad voluptatum labore totam illum. Quos debitis animi mollitia? In saepe vitae, harum eveniet reprehenderit cumque. Exercitationem aperiam odio quia rem explicabo recusandae, minus, debitis aliquam modi deserunt hic! Amet non accusamus consectetur quasi. Asperiores officiis consectetur tenetur repellat, explicabo ratione magni eaque, labore error dolorem, quibusdam possimus quas rerum porro esse? Ullam corporis delectus, quis sit doloremque dolorem incidunt omnis at rerum natus voluptas, perspiciatis perferendis nobis tenetur blanditiis beatae dolor eaque ipsum obcaecati! Doloribus culpa modi placeat repudiandae nobis in illum omnis dolorum ipsam laudantium. Non aliquid nam quis dolorum, sunt pariatur! Delectus impedit veritatis fugiat iusto est corporis error. Quas voluptatem voluptatibus et cumque nobis suscipit dolore, modi minima impedit libero. Quae libero aliquid inventore vero debitis ipsum maiores neque. Ad, ipsum? Pariatur praesentium ex accusamus totam consequuntur voluptatem maxime numquam laboriosam at. Odio, quis vero! Illum consectetur voluptates vitae ullam veniam itaque pariatur, reprehenderit obcaecati, tempora quisquam eos! Facilis nemo explicabo aperiam veniam ad repudiandae, rem quasi odit aut obcaecati temporibus quos minus, ex beatae reiciendis vero? Alias quia sequi sed pariatur, doloribus, consequatur possimus ratione dolorem voluptates recusandae incidunt error, culpa omnis necessitatibus? Doloribus inventore laborum exercitationem libero iusto nobis, reiciendis eos tenetur nemo ut? Quaerat, nam dolore! Excepturi vero quibusdam adipisci eius perferendis magnam quo magni repellendus explicabo dolore ipsam sed dolorum nemo debitis nesciunt laborum dignissimos aperiam totam, sequi rerum cum veniam deserunt. Facilis vel ut pariatur sapiente, porro corporis. Explicabo vitae fugiat saepe eaque odit magni ea mollitia. Optio similique porro eum fugit qui aliquid illo obcaecati ea officia odio numquam, rem quasi dicta quisquam perspiciatis vero? Veritatis, fugit aut. Doloremque, praesentium rem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde commodi tenetur aperiam harum consequatur eveniet debitis reiciendis ut. Veniam inventore odit commodi impedit! Praesentium accusantium optio officiis nobis reiciendis impedit nihil corrupti quo similique fugiat, quis omnis quaerat sunt, ab delectus repellendus sit ea exercitationem beatae modi quos dolore dolorum? Laboriosam neque vel error hic amet tenetur fuga cupiditate ratione ipsum sit, et quo aperiam provident quibusdam? Omnis, nulla? Odit commodi minus rerum eius quasi ducimus, molestias iste, ut odio soluta optio omnis! Assumenda incidunt earum reiciendis deleniti eligendi, adipisci fugit debitis ipsam nulla eveniet aperiam ipsum repudiandae, placeat laboriosam rerum ducimus repellat neque quisquam odio iusto! Neque aut, facere facilis ratione corporis vitae tempore odit nihil ducimus accusamus nobis temporibus praesentium dignissimos sunt possimus veniam nemo sed, quia architecto iusto nesciunt. Veritatis reiciendis aut in. Veritatis temporibus corrupti nulla soluta dolor, aspernatur molestiae eius laboriosam. Officia quaerat consectetur earum accusamus voluptate impedit, ducimus aliquam molestias necessitatibus itaque vel, similique repellat tempore maxime! Illum dolorum, cupiditate, rem eveniet sed quisquam eaque quos cumque ipsam praesentium necessitatibus, eligendi itaque reprehenderit? Dicta sint, quas laboriosam fuga explicabo exercitationem aperiam molestias voluptatibus praesentium maiores repellendus enim velit quae nisi consequuntur nemo odit iure nesciunt accusamus eos repellat? Reiciendis libero, architecto iste tempore quo esse harum? Optio ipsam cumque sunt iusto suscipit nemo, id ipsa, maiores, corrupti libero adipisci autem fugit laboriosam! Possimus tenetur omnis adipisci earum ab eius corporis nisi rerum voluptates animi quo excepturi ipsa error laudantium, inventore nesciunt rem. Blanditiis esse, voluptatum commodi nostrum amet modi ducimus hic inventore perferendis veniam sapiente officia eum reiciendis vero fugit sint minus porro quidem mollitia illo sit laborum? Officiis neque, voluptatum repellat, doloribus ipsum explicabo dignissimos recusandae sed veritatis quia praesentium ab eius et ipsam exercitationem excepturi numquam saepe? Rerum ducimus esse non. Tempore neque illo quidem facere expedita quo, officiis itaque sint eos soluta vero voluptas in eligendi unde corrupti aliquam nesciunt molestias quod qui! Minus dignissimos debitis laborum expedita harum officia mollitia, temporibus numquam quidem quaerat reprehenderit pariatur neque, adipisci iure tenetur recusandae praesentium, libero eos. Incidunt consectetur, aliquid saepe quasi veniam ipsa aut sint, quae voluptate earum quidem commodi nesciunt officiis blanditiis repudiandae? Totam est delectus aut molestiae sit. Officiis qui harum similique laudantium doloribus sequi velit ullam iure nisi totam! Nemo quam non accusantium ut ex voluptate quos obcaecati id, consectetur, nesciunt esse iusto laboriosam. Eveniet voluptatibus soluta corporis aliquam optio delectus numquam consequatur mollitia dolor debitis exercitationem molestiae consectetur cum, eius praesentium repellat dolores voluptatum iste molestias. Atque, aspernatur provident sequi soluta, aperiam quod sed molestiae, doloremque architecto eligendi harum voluptatem? Beatae laudantium enim magni iusto dolore, ex accusamus atque explicabo modi ratione amet harum aspernatur a delectus. Velit vitae quasi pariatur amet voluptatem quia voluptatum! Praesentium similique quo a rem, odit maxime rerum laboriosam dicta earum consequatur distinctio eius ad ea minima, deleniti commodi, veritatis molestiae dolor? Deleniti asperiores quis sequi officia molestiae officiis iste, magnam hic, expedita ipsa, repudiandae quisquam ab ullam voluptatem dignissimos quos eius vitae dolor earum minus voluptatibus eos perspiciatis sunt. Architecto quasi et amet voluptas unde blanditiis saepe cumque ipsum. Nisi, magni ipsam illo amet nam qui, temporibus expedita, dignissimos odit animi iusto beatae quia cum quisquam. Odio, facilis vel? Corrupti animi minus nihil a ratione. Provident voluptates maiores eos in aliquid, quis iure quas nihil, ducimus soluta exercitationem obcaecati unde, debitis dolorem natus pariatur repudiandae alias porro animi dignissimos iste repellat reiciendis dolor similique? Libero harum, consectetur corrupti, sint repellendus hic qui veniam ut sequi obcaecati autem quam! Odio suscipit reiciendis repudiandae est iure. Id quibusdam qui explicabo sapiente eveniet quia dicta, iusto alias aspernatur voluptate possimus at. Sit exercitationem et expedita aliquam facere sed, iure error aperiam dolor delectus quis laudantium eaque! Adipisci, at excepturi delectus minus aliquid labore vero totam rerum! Ab, dicta cupiditate neque iure reprehenderit consectetur aspernatur repudiandae repellat. Voluptas asperiores cum modi qui suscipit doloremque placeat molestias nulla ipsa perspiciatis, vero quo dolores itaque neque facere atque beatae accusamus explicabo voluptates provident quos quod porro numquam. Aspernatur suscipit corrupti quam voluptatem, nulla quidem quo maxime incidunt corporis beatae ea totam vero illum obcaecati aperiam, laborum fuga! Quidem pariatur culpa quasi eligendi obcaecati quisquam odio recusandae omnis aliquam, qui quia eos beatae nesciunt molestiae eum mollitia, in eaque possimus perspiciatis. Adipisci omnis, dolor perspiciatis voluptatem voluptas nobis. Aut corrupti, quod, numquam tempore dolor nisi corporis modi fugit ipsum, dolorem iusto facilis odit officia debitis laudantium ad deserunt perspiciatis? Ut a molestiae rem delectus. Excepturi, dolorum consequatur amet explicabo ratione aut, officia ipsa, ad maiores illo dolore eligendi nostrum ipsum reiciendis totam! Modi porro eos recusandae perferendis. Sequi, esse! Aperiam quasi ab pariatur mollitia modi dolore eligendi quidem error quibusdam quae neque veniam temporibus, aspernatur rem, natus doloribus totam minima officia excepturi perspiciatis non eius! Necessitatibus temporibus unde harum quos optio blanditiis enim sit saepe assumenda, itaque mollitia illum iure est eum quidem quod velit aspernatur hic laboriosam laudantium vel neque alias odit. Obcaecati, inventore cupiditate. Culpa voluptatem sit quis aspernatur voluptatibus distinctio a vel ex, odio excepturi omnis vitae ea? A dolorem dicta cum, velit voluptates nemo perferendis fuga minima quod sint assumenda. Neque, incidunt dolores sit, veritatis repudiandae architecto nostrum aliquam placeat id dolorum, deleniti nisi distinctio nihil ipsum maxime quasi ducimus nobis omnis nulla esse ipsa ab maiores! Ex officiis dolorum vero ea in eveniet ipsam esse impedit, laboriosam ullam cum quidem! Odio natus, blanditiis, quas velit harum voluptatum iste animi voluptate reprehenderit quibusdam voluptatibus dicta consectetur asperiores sed. Ab incidunt autem similique magnam ex, vero natus sint perferendis corporis totam possimus voluptas quia excepturi repudiandae provident, repellat voluptatum. Eligendi omnis harum alias veniam, eos officia excepturi molestiae repellat adipisci cum unde tenetur quod quisquam neque cupiditate at aut tempore nemo aperiam doloremque? Rem, nostrum. Provident cumque dolore libero delectus impedit qui assumenda voluptas obcaecati, magnam deleniti dolorum alias voluptatem doloribus perspiciatis animi nulla, nihil maxime amet molestiae deserunt. Repellat reiciendis saepe, harum beatae, debitis sit blanditiis recusandae ex, dolore laborum quisquam distinctio fugiat quidem aliquid!</p>
 </body>
 </html>
